@@ -1,5 +1,5 @@
 {
-  "name": "rimas ",
+  "name": "rimas",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,5 +21,17 @@
     "eslint-plugin-vue": "^9.9.0",
     "prettier": "^2.8.4",
     "vite": "^4.1.4"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KUNG3N/rimas..github.io.git"
+  },
+  "author": "abdu mah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KUNG3N/rimas..github.io/issues"
+  },
+  "homepage": "https://github.com/KUNG3N/rimas..github.io#readme"
 }
