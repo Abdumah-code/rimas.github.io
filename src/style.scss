@@ -1,6 +1,6 @@
 $metallic-gold: #e2cd92;
 $slate-gray: #708090;
-
+@media (min-width: 1025px){
 * {
   box-sizing: border-box;
 }
@@ -56,7 +56,7 @@ header {
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: left;
       width: 100%;
 
       li {
@@ -64,13 +64,19 @@ header {
         margin-left: 1rem;
 
         a {
-          color: $metallic-gold;
           text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
+        
+          i {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        
+            &:hover {
+              text-decoration: underline;
+            }
           }
-        }
+        }        
       }
     }
   }
@@ -167,4 +173,5 @@ header {
 
 .card-back p {
   font-size: 0.8rem;
+}
 }
