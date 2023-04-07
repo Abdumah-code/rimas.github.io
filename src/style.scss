@@ -97,9 +97,9 @@ header {
 .info{
   position: absolute;
   width: 95%;
-  height: 35%;
-  background-color: white;
-  color: #000;
+  height: 50%;
+  background-image: url(./image/sett1.jpg);
+  background-size: cover;
   z-index: 100;
   display: flex;
   top: 10%;
@@ -107,6 +107,12 @@ header {
   justify-content: center;
   text-align: center;
   border-radius: 20px;
+  
+    p{
+      color: #000;
+      font-family:'Giza', 'sans-serif';
+      font-size: 2rem;
+    }
 }
 
 .menu{
@@ -191,4 +197,9 @@ header {
 // .card-back p {
 //   font-size: 0.8rem;
 // }
+}
+
+@font-face {
+  font-family: Giza;
+  src: url(./fonts/Giza.otf);
 }

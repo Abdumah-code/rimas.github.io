@@ -83,9 +83,9 @@
   .info {
     position: absolute;
     width: 95%;
-    height: 35%;
-    background-color: white;
-    color: #000;
+    height: 50%;
+    background-image: url(./image/sett1.jpg);
+    background-size: cover;
     z-index: 100;
     display: flex;
     top: 10%;
@@ -93,6 +93,11 @@
     justify-content: center;
     text-align: center;
     border-radius: 20px;
+  }
+  .info p {
+    color: #000;
+    font-family: "Giza", "sans-serif";
+    font-size: 2rem;
   }
   .menu {
     background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
@@ -126,4 +131,8 @@
     min-width: 100%;
     min-height: 92%;
   }
+}
+@font-face {
+  font-family: Giza;
+  src: url(./fonts/Giza.otf);
 }/*# sourceMappingURL=style.css.map */
