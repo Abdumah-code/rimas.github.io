@@ -7,9 +7,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("./marble.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -18,24 +16,61 @@
     display: flex;
     justify-content: center;
   }
-  #animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 2;
-  }
-  #animation img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    width: 100%;
-    height: 100%;
+  .first {
+    position: fixed;
+    display: flex;
+    background-image: url(./gold.jpg);
+    width: 0.2rem;
+    height: 100vh;
+    left: 5rem;
     z-index: 3;
+  }
+  .second {
+    position: fixed;
+    display: flex;
+    background-image: url(./gold.jpg);
+    width: 0.2rem;
+    height: 100vh;
+    right: 5rem;
+    z-index: 3;
+  }
+  .third {
+    position: fixed;
+    display: flex;
+    background-image: url(./gold.jpg);
+    width: 0.2rem;
+    height: 183vh;
+    margin-left: 50%; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+    transform: rotate(90deg);
+    z-index: 3;
+  }
+  .forth {
+    position: fixed;
+    display: flex;
+    background-image: url(./gold.jpg);
+    width: 0.2rem;
+    height: 185vh;
+    top: -83%;
+    margin-left: 50%; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+    transform: rotate(90deg);
+    z-index: 3;
+  }
+  .complogo {
+    display: flex;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    left: 0.5rem;
+    top: 0;
+  }
+  .vail {
+    background-color: rgba(0, 0, 0, 0.3254901961);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   header {
     background-color: rgba(12, 1, 1, 0.457);
@@ -80,6 +115,14 @@
     display: flex;
     margin-right: 1%;
     z-index: 1;
+  }
+  .back {
+    position: absolute;
+    height: 75rem;
+    top: -10rem;
+    right: -11rem;
+    display: flex;
+    z-index: 2;
   }
   .logo {
     color: white;
@@ -189,7 +232,36 @@
     text-align: center;
   }
 }
+#blobSvg {
+  display: flex;
+  position: fixed;
+  top: 15%;
+  left: 17rem;
+}
+
+.title {
+  font-family: "rimas", sans-serif;
+  font-size: 3em;
+  color: #AA771C;
+  display: flex;
+  position: fixed;
+  left: 6rem;
+  top: -3rem;
+}
+
+.middle {
+  display: flex;
+  position: fixed;
+  left: 25rem;
+  top: 13rem;
+  width: 25rem;
+}
+
 @font-face {
   font-family: Giza;
   src: url(./fonts/Giza.otf);
+}
+@font-face {
+  font-family: rimas;
+  src: url(./fonts/LDBumbon-Regular.ttf);
 }/*# sourceMappingURL=style.css.map */

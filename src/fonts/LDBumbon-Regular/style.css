@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Bumbon';
+    src: local('Bumbon Regular'), local('Bumbon-Regular'),
+        url('LDBumbon-Regular.woff2') format('woff2'),
+        url('LDBumbon-Regular.woff') format('woff'),
+        url('LDBumbon-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
