@@ -11,45 +11,45 @@ body {
   margin: 0;
   padding: 0;
   // background-image: url("../mrtranscendence-attachments/graybackground.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  background-color: #000;
+  // background-size: 100vw 100vh;
+  // background-repeat: repeat;
+  background-color: black;
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   display: flex;
+  overflow-x: hidden;
   justify-content: center;
 }
 
 .first {
-  position: fixed;
+  position: absolute;
   display: flex;
   background-image: url(./gold.jpg);
   width: 0.2rem;
-  height: 100vh;
+  height: 200vh;
   left: 5rem;
   z-index: 3;
 }
 
 .second {
-  position: fixed;
+  position: absolute;
   display: flex;
   background-image: url(./gold.jpg);
   width: 0.2rem;
-  height: 100vh;
+  height: 200vh;
   right: 5rem;
   z-index: 3;
 }
 
 .third {
-  position: fixed;
+  position: absolute;
   display: flex;
   background-image: url(./gold.jpg);
   width: 0.2rem;
   height: 183vh;
-  margin-left: 50%;
+  // margin-left: 50%;
   -webkit-transform: rotate(90deg); /* Safari and Chrome */
   -moz-transform: rotate(90deg);   /* Firefox */
   -ms-transform: rotate(90deg);   /* IE 9 */
@@ -59,13 +59,30 @@ body {
 }
 
 .forth {
-  position: fixed;
+  position: absolute;
   display: flex;
   background-image: url(./gold.jpg);
   width: 0.2rem;
   height: 185vh;
-  top: -83%;
-  margin-left: 50%;
+  bottom: -1rem;
+  left: 49%;
+  // margin-left: 50%;
+  -webkit-transform: rotate(90deg); /* Safari and Chrome */
+  -moz-transform: rotate(90deg);   /* Firefox */
+  -ms-transform: rotate(90deg);   /* IE 9 */
+  -o-transform: rotate(90deg);   /* Opera */
+  transform: rotate(90deg);
+  z-index: 3;
+}
+
+.fifth {
+  position: absolute;
+  display: flex;
+  background-image: url(./gold.jpg);
+  width: 0.2rem;
+  height: 380vh;
+  left: -5%;
+  // margin-left: 50%;
   -webkit-transform: rotate(90deg); /* Safari and Chrome */
   -moz-transform: rotate(90deg);   /* Firefox */
   -ms-transform: rotate(90deg);   /* IE 9 */
@@ -76,22 +93,24 @@ body {
 
 .complogo {
   display: flex;
-  position: fixed;
+  position: absolute;
   width: 4rem;
   height: 4rem;
   left: 0.5rem;
   top: 0;
+  z-index: 2;
 }
 
-.vail {
- background-color: #00000053;
- z-index: 2;
- width: 100%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
-}
+
+// .vail {
+//  background-color: #00000053;
+//  z-index: 2;
+//  width: 100%;
+//  height: 100%;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+// }
 
 header {
   background-color: rgba(12, 1, 1, 0.457);
@@ -154,6 +173,15 @@ header {
   z-index: 2;
 }
 
+.back2{
+  position: absolute;
+  height: 67rem;
+  top: 32rem;
+  left: -3.6rem;
+  display: flex;
+  z-index: 2;
+}
+
 .logo{
   color: white;
   text-decoration: none;
@@ -163,126 +191,92 @@ header {
   font-size: 1.5rem;
 }
 
-
-.info{
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  background-image: url(./image/sett1.jpg);
-  background-size: cover;
-  z-index: 3;
-  display: flex;
-  top: 4rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+// .info{
+//   position: absolute;
+//   width: 100%;
+//   height: 50%;
+//   background-image: url(./image/sett1.jpg);
+//   background-size: cover;
+//   z-index: 3;
+//   display: flex;
+//   top: 4rem;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
   
-    p{
-      color: #000;
-      font-family:'Giza', 'sans-serif';
-      font-size: 2rem;
-    }
-}
+//     p{
+//       color: #000;
+//       font-family:'Giza', 'sans-serif';
+//       font-size: 2rem;
+//     }
+// }
 
-.menu{
-  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-  color: black;
-  width: 7%;
-  border-radius: 10px;
-  font-size: 1.3rem;
-}
+// .menu{
+//   background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+//   color: black;
+//   width: 7%;
+//   border-radius: 10px;
+//   font-size: 1.3rem;
+// }
 
-.content {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  padding: 0.5rem;
-}
+// .content {
+//   position: absolute;
+//   background: rgba(0, 0, 0, 0.5);
+//   width: 100%;
+//   height: 100%;
+//   top: 0%;
+//   padding: 0.5rem;
+// }
 
-.video{
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}
+// .menus {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: fixed;
+//   top: 22rem;
+//   width: 80%;
+//   height: 40%;
+//   z-index: 5;
 
-#myVideo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height:92%;
-}
+//   section {
+//     background-color: white;
+//     width: 30%;
+//     height: 60%;
+//     display: flex;
+//     margin-left: 2%;
+//     border-radius: 10px;
 
-.menus {
+//   }
+// }
+
+// footer {
+//   position: fixed;
+//   width: 85%;
+//   height: 3em;
+//   margin: 0%;
+//   display: flex;
+//   background-color: rgba(255, 217, 0, 0.352);
+//   z-index: 1;
+//   bottom: 3rem;
+//   justify-content: center;
+//   border-radius: 20px;
+//   border-style:groove;
+
+//   p {
+//     text-align: center;
+//   }
+// }
+
+.kvalite {
+  font-family: 'rimas', sans-serif;
+  font-size: 5em;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 22rem;
-  width: 80%;
-  height: 40%;
-  z-index: 5;
-
-  section {
-    background-color: white;
-    width: 30%;
-    height: 60%;
-    display: flex;
-    margin-left: 2%;
-    border-radius: 10px;
-
-  }
-}
-
-.hum {
-  background-image: url(./image/hum.jpg);
-  z-index: 5;
-  background-size: cover;
-}
-
-.bab {
-  background-image: url(./image/baba.jpg);
-  z-index: 5;
-  background-size: cover;
-}
-
-.pie {
-  background-image: url(./image/pie.jpg);
-  z-index: 5;
-  background-size: cover;
-}
-
-footer {
-  position: fixed;
-  width: 85%;
-  height: 3em;
-  margin: 0%;
-  display: flex;
-  background-color: rgba(255, 217, 0, 0.352);
-  z-index: 1;
-  bottom: 3rem;
-  justify-content: center;
-  border-radius: 20px;
-  border-style:groove;
-
-  p {
-    text-align: center;
-  }
-}
-}
-
-#blobSvg {
-  display: flex;
-  position: fixed;
-  top: 15%;
-  left: 17rem;
+  left: 45%;
+  top: 10%;
+  width: 50%;
+  position: absolute;
+  z-index: 3;
+  color: #AA771C;
 }
 
 .title {
@@ -290,20 +284,113 @@ footer {
   font-size: 3em;
   color: #AA771C;
   display: flex;
-  position: fixed;
+  position: absolute;
   left: 6rem;
   top: -3rem;
 }
 
-.middle {
+.section {
+  // width: 100%;
+  // height: 100%;
+  // position: absolute; 
+  // margin-top: 50%;
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // flex-direction: column;
+  // left: 25%;
+
+  // p {
+  //   font-family: 'rimas', sans-serif;
+  //   font-size: 1.4em;
+  //   line-height: 1.3rem;
+  //   text-align: center;
+  //   width: 50%;
+  // }
+  
+  // p::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   margin-top: 4%;
+  //   margin-left: -2.5%;
+  //   width: 55%;
+  //   height: 90%;
+  //   background: rgba(255, 255, 255, 0.14);
+  //   border-radius: 16px;
+  //   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  //   backdrop-filter: blur(2.7px);
+  //   -webkit-backdrop-filter: blur(2.7px);
+  //   border: 1px solid rgba(255, 255, 255, 0.35);
+  //   z-index: -1;
+  // }
+}
+
+button {
   display: flex;
-  position: fixed;
-  left: 25rem;
-  top: 13rem;
-  width: 25rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  padding: 10px 20px;
+  height: 6rem;
+  width: 6rem;
+  background: radial-gradient(circle at center, #fbf9e2, #dad2c6);  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button i {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.undertext {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 30%;
+  top: 43%;
+  left: 46%;
+  font-size: 1.3em;
+  z-index: 3;
+  color: #AA771C;
+}
+
+.woman {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  left: 10rem;
+  top: 5rem;
+}
+
+.blackbox {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  width: 5rem;
+  height: 4.7rem;
+  top: 0;
+  left: 0;
 }
 
 
+
+
+}
+
+// #blobSvg {
+//   display: flex;
+//   position: fixed;
+//   top: 15%;
+//   left: 17rem;
+// }
 @font-face {
   font-family: Giza;
   src: url(./fonts/Giza.otf);
