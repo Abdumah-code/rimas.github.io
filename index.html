@@ -9,17 +9,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
+
+<div class="vail hidden" id="vail"></div>
+
 <p class="title">RIMAS CATERING</p>
 
 <img src="./src/image/testback.png" alt="" class="back">
 <img src="./src/image/secondBack.png" alt="" class="back2">
-
 <img src="./src/image/logo.png" alt="" class="complogo">
-
-
 <img src="./src/image/woman.jpg" alt="" class="woman">
 
-
+<div class="borders">
+  <img src="./src/gold.jpg" alt="" class="first">  
+  <img src="./src/gold.jpg" alt="" class="second">
+  <img src="./src/gold.jpg" alt="" class="third">  
+  <img src="./src/gold.jpg" alt="" class="forth">  
+  <img src="./src/gold.jpg" alt="" class="fifth">
+</div>
 
 <p class="kvalite">KVALITÉ ÄR NUMMER 1 FÖR OSS</p>
 
@@ -32,39 +38,66 @@
 
 <button id="scrollButton"><i class="fas fa-chevron-down"></i></button>
 
-<!-- <div class="blackbox"></div> -->
-
-
-
-<div class="lines">
-    <div class="first"></div>    
-    <div class="second"></div>
-    <div class="third"></div>
-    <div class="forth"></div>
-    <div class="fifth"></div>
-</div>  
-
 <section class="section" id="targetSection">
-  <!-- <p>
-    Vi är stolta över att erbjuda en högkvalitativ cateringupplevelse för alla typer av evenemang och tillfällen. Vårt team av erfarna kockar och servitörer arbetar tillsammans för att skapa en minnesvärd och smakfull upplevelse för våra kunder.
-  </p>
 
-  <p> 
-    Oavsett om du planerar ett bröllop, födelsedagsfest, företagsmiddag eller något annat evenemang, kan vi skräddarsy ett menyalternativ som passar dina behov och budget. Vi använder bara färska och högkvalitativa ingredienser för att säkerställa att maten vi serverar är utsökt och välsmakande.
-  </p>
+  <div class="over">
+    <p >
+      Välkommen till vårt cateringföretag! 
+      Vi är passionerade om mat och strävar efter att skapa minnesvärda smakupplevelser för varje tillfälle. 
+      Vårt team av erfarna kockar och kreativa matentusiaster är 
+      dedikerade att leverera mat av högsta kvalitet och 
+      enastående service till våra kunder.
+    </p>
+  </div>
 
-  <p>
-    Vi är stolta över att kunna erbjuda en mängd olika menualternativ, inklusive vegetarisk, vegan, grill och mer. Vi kan också anpassa menyer för att passa särskilda kostbehov och allergier.
-  </p>
+  <div class="under">
+    <p>
+      Oavsett om det är en:
+    </p>
 
-  <p> 
-    Vårt mål är att göra din cateringupplevelse så enkel och smidig som möjligt. Vi tar hand om allt, från att planera och förbereda maten till att servera (buffé) och rengöra efter evenemanget. Du kan luta dig tillbaka, koppla av och njuta av en fantastisk matupplevelse tillsammans med dina gäster.
-  </p>
+    <span> INTIM MIDDAG </span> 
+    <span> FÖRETAGSEVENT </span> 
+    <span> BRÖLLOPSFEST </span>
 
-  <p>
-    Kontakta oss idag för att diskutera dina cateringbehov och för att boka din nästa cateringupplevelse. Vi ser fram emot att arbeta med dig!
-  </p> -->
+    <p>
+      är vi här för att ta hand om allt.
+    </p>
+  </div>
+
+  <img src="./src/image/test1.jpg" alt="" class="plate1">
+  <img src="./src/image/test2.jpg" alt="" class="plate2">
 </section>
+
+<button id="kontakt" class="action">Kontakta oss för mer</button>
+
+
+<div class="contactForm" id="kontaktForm">
+  <h1>Kontakta Oss</h1>
+
+  <button  id="close" class="close">X</button>
+  
+  <form action="submit.php" method="POST">
+    <label for="name">namn:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Mobil Number:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="people">Antal Gäster:</label>
+    <input type="number" id="people" name="people" required><br><br>
+
+    <label for="diet">Preferenser:</label>
+    <select id="diet" name="diet" required>
+      <option value="vegetarian">Vegetariskt</option>
+      <option value="meat">Kött</option>
+    </select><br><br>
+
+    <button class="subButton" type="submit" value="Submit">SKICKA</button>
+  </form>
+</div>
 
 <script defer src="./src/main.js"></script>
 </body>

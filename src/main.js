@@ -1,13 +1,25 @@
 const scrollButton = document.getElementById("scrollButton");
 const targetSection = document.getElementById("targetSection");
-let scrollState = false;
+const kontaktaButton = document.getElementById("kontakt");
+const kontaktaForm = document.getElementById("kontaktForm");
+const vail = document.getElementById("vail");
+const close = document.getElementById("close");
+
+kontaktaForm.classList.add("hidden");
 
 scrollButton.addEventListener("click", function () {
-  if (!scrollState) {
-    targetSection.scrollIntoView({ behavior: "smooth" });
-    scrollState = true;
-  } else {
-    document.body.scrollIntoView({ behavior: "smooth" });
-    scrollState = false;
-  }
+  targetSection.scrollIntoView({ behavior: "smooth" });
 });
+
+
+kontaktaButton.addEventListener("click", function () {
+  kontaktaForm.classList.remove("hidden");
+  vail.classList.remove("hidden");
+})
+
+close.addEventListener("click", function () {
+  kontaktaForm.classList.add("hidden");
+  vail.classList.add("hidden");
+})
+
+
