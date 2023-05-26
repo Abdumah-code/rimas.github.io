@@ -33,3 +33,4 @@ function displayExtraText() {
     readMoreButton.innerText = "Läs mer";
   }
 }
+

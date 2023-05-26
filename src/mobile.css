@@ -181,7 +181,7 @@
     font-family: "rimas", sans-serif;
     text-align: left;
     font-size: 1.5rem;
-    margin-top: -1.5rem;
+    margin-top: 7rem;
     margin-left: 1rem;
     width: 15rem;
     color: white;
@@ -236,10 +236,12 @@
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    left: 20rem;
-    right: 20rem;
-    top: 5rem;
-    bottom: 5rem;
+    width: 21rem;
+    height: 48rem;
+    left: 2rem;
+    right: 2rem;
+    top: 3rem;
+    bottom: 3rem;
     border-radius: 15px;
   }
   .contactForm input {
@@ -259,8 +261,8 @@
     width: 10rem;
     height: 3rem;
     border-radius: 0;
-    left: 39rem;
-    top: 36rem;
+    left: 11rem;
+    top: 48rem;
     font-family: "Fog", sans-serif;
     color: #AA771C;
     justify-content: center;
@@ -271,10 +273,19 @@
     display: flex;
     position: absolute;
     top: 3rem;
-    left: 45rem;
+    left: 21rem;
     width: 2rem;
     height: 2rem;
     border-radius: 0;
+  }
+  #readMoreButton {
+    display: flex;
+    top: 16rem;
+    left: 8rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
   }
 }
 @font-face {
