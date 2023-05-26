@@ -22,4 +22,14 @@ close.addEventListener("click", function () {
   vail.classList.add("hidden");
 })
 
-
+function displayExtraText() {
+  var extraText = document.getElementById('extraText');
+  var readMoreButton = document.getElementById('readMoreButton');
+  if (extraText.style.display === "none") {
+    extraText.style.display = "block";
+    readMoreButton.innerText = "Läs mindre";
+  } else {
+    extraText.style.display = "none";
+    readMoreButton.innerText = "Läs mer";
+  }
+}

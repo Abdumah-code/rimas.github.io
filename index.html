@@ -41,13 +41,13 @@
 <section class="section" id="targetSection">
 
   <div class="over">
-    <p >
-      Välkommen till vårt cateringföretag! 
-      Vi är passionerade om mat och strävar efter att skapa minnesvärda smakupplevelser för varje tillfälle. 
-      Vårt team av erfarna kockar och kreativa matentusiaster är 
-      dedikerade att leverera mat av högsta kvalitet och 
-      enastående service till våra kunder.
+    <p id="initialText">
+      Välkommen till vårt cateringföretag! Vi är passionerade om mat och strävar efter att skapa minnesvärda smakupplevelser för varje tillfälle.
     </p>
+    <p id="extraText" style="display:none">
+      Vårt team av erfarna kockar och kreativa matentusiaster är dedikerade att leverera mat av högsta kvalitet och enastående service till våra kunder.
+    </p>
+    <button id="readMoreButton" onclick="displayExtraText()">Läs mer</button>
   </div>
 
   <div class="under">
@@ -100,5 +100,7 @@
 </div>
 
 <script defer src="./src/main.js"></script>
+<script src="./smtp.js"></script>
+
 </body>
 </html>
