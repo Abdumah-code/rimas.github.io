@@ -18,14 +18,22 @@ document.querySelector('form').addEventListener('submit', function (e) {
     body += 'Preferenser: ' + diet + '\n';
   
     Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "abdumah2021fr@gmail.com",
-      Password: "50298C3F974A208A809110EE1A45FF404A30",
+      SecureToken : "f5040cc6-b5f0-41ae-9f7e-8c272cb338b6",
       To: 'abdullahtillabd2014@gmail.com',
-      From: "",
+      From: "abdullahtillabd2014@gmail.com",
       Subject: "Form Submission",
       Body: body
     }).then(function (message) {
       alert(message);
     });
   });
+
+//   Email.send({
+//     SecureToken : "f5040cc6-b5f0-41ae-9f7e-8c272cb338b6",
+//     To : 'abdullahtillabd2014@gmail.com',
+//     From : "abdullahtillabd2014@gmail.com",
+//     Subject : "test 1",
+//     Body : "yo we lit waf"
+// }).then(
+//   message => alert(message)
+// );
