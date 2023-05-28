@@ -25,6 +25,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
       Body: body
     }).then(function (message) {
       alert(message);
+      window.location.href = "./thankyou.html"
     });
   });
 
