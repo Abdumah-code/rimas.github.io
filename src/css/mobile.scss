@@ -69,13 +69,15 @@ body {
 }
 
 .complogo {
-    display: flex;
-    position: absolute;
-    width: 4rem;
-    height: auto;
-    left: 0.5rem;
-    top: 0;
-    z-index: 2;
+  display: flex;
+  position: absolute;
+  width: 20%;
+  height: auto;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 2;
+  max-width: 4rem;
+  min-width: 4rem;
 }
 
 .title {

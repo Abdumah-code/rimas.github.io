@@ -60,11 +60,13 @@
   .complogo {
     display: flex;
     position: absolute;
-    width: 4rem;
+    width: 20%;
     height: auto;
     left: 0.5rem;
-    top: 0;
+    top: 0.5rem;
     z-index: 2;
+    max-width: 4rem;
+    min-width: 4rem;
   }
   .homelogo {
     position: relative;
@@ -380,13 +382,13 @@
 }
 @font-face {
   font-family: Giza;
-  src: url(./fonts/Giza.otf);
+  src: url(../fonts/Giza.otf);
 }
 @font-face {
   font-family: Fog;
-  src: url(./fonts/foglihtenno07/FoglihtenNo07.otf);
+  src: url(../fonts/foglihtenno07/FoglihtenNo07.otf);
 }
 @font-face {
   font-family: rimas;
-  src: url(./fonts/LDBumbon-Regular.ttf);
+  src: url(../fonts/LDBumbon-Regular.ttf);
 }/*# sourceMappingURL=style.css.map */
