@@ -1,4 +1,4 @@
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,24 +15,24 @@
   .first {
     position: absolute;
     display: flex;
-    width: 0.1rem;
-    height: 107rem;
+    width: 0.2rem;
+    height: 99rem;
     left: 5rem;
     z-index: 3;
   }
   .second {
     position: absolute;
     display: flex;
-    width: 0.1rem;
-    height: 107rem;
-    left: 21rem;
+    width: 0.2rem;
+    height: 99rem;
+    right: 5rem;
     z-index: 3;
   }
   .third {
     position: absolute;
     display: flex;
-    width: 100%;
-    height: 0.1rem;
+    width: 89rem;
+    height: 0.2rem;
     top: 5rem;
     left: 0;
     z-index: 3;
@@ -40,18 +40,18 @@
   .forth {
     position: absolute;
     display: flex;
-    width: 100%;
-    height: 0.1rem;
-    top: 51rem;
+    width: 89rem;
+    height: 0.2rem;
+    top: 45rem;
     left: 0;
     z-index: 3;
   }
   .fifth {
     position: absolute;
     display: flex;
-    width: 100%;
-    height: 0.1rem;
-    top: 102rem;
+    width: 89rem;
+    height: 0.2rem;
+    top: 94rem;
     left: 0;
     z-index: 3;
   }
@@ -66,42 +66,61 @@
     max-width: 4rem;
     min-width: 4rem;
   }
+  .homelogo {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    margin-right: 1%;
+    z-index: 1;
+  }
   .title {
     font-family: "rimas", sans-serif;
-    font-size: 2.1em;
+    font-size: 3em;
     color: #AA771C;
     display: flex;
     position: absolute;
     left: 6rem;
-    top: -1.5rem;
+    top: -3rem;
   }
   .back {
     position: absolute;
-    height: 25rem;
-    top: 10rem;
+    height: 60rem;
     right: 0rem;
     display: flex;
     z-index: 2;
   }
   .woman {
-    display: none;
+    display: flex;
+    position: absolute;
+    width: 25rem;
+    left: 10rem;
+    top: 6.5rem;
   }
   .back2 {
     position: absolute;
-    height: 30rem;
-    top: 55rem;
+    height: 40rem;
+    top: 50rem;
     left: -3rem;
     display: flex;
-    z-index: 0;
+    z-index: 2;
+  }
+  .logo {
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
   }
   .kvalite {
     font-family: "rimas", sans-serif;
-    font-size: 2em;
+    font-size: 4em;
     display: flex;
     margin: 0%;
-    left: 6rem;
-    top: 7rem;
-    width: 15rem;
+    left: 37rem;
+    top: 15rem;
+    width: 35rem;
     position: absolute;
     z-index: 3;
     color: #AA771C;
@@ -110,9 +129,9 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 15rem;
-    top: 27rem;
-    left: 6rem;
+    width: 30rem;
+    top: 25rem;
+    left: 37rem;
     font-size: 1.3em;
     z-index: 3;
     color: #AA771C;
@@ -122,8 +141,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 46rem;
-    left: 13rem;
+    top: 40rem;
+    left: 50rem;
     transform: translate(-50%, -50%);
     font-size: 1.2em;
     padding: 10px 20px;
@@ -133,6 +152,7 @@
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    z-index: 2;
     transition: transform 0.3s ease-in-out, background-color 0.6s ease-in-out;
   }
   button:hover {
@@ -144,17 +164,18 @@
     color: black;
   }
   .section {
-    width: 16rem;
+    width: 40rem;
     height: 45rem;
     position: absolute;
     margin-top: 50rem;
     display: flex;
     flex-direction: column;
-    left: 5rem;
+    left: 20rem;
+    z-index: 2;
   }
   .section span {
     background-color: rgba(251, 246, 194, 0);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: flex;
     width: 100%;
     height: 3rem;
@@ -171,9 +192,9 @@
   .over {
     display: flex;
     margin-top: 1rem;
-    font-size: 1.3em;
+    font-size: 1.7em;
     line-height: 1.7rem;
-    width: 16rem;
+    width: 38rem;
     font-family: "rimas", sans-serif;
     text-align: center;
     color: #AA771C;
@@ -182,10 +203,8 @@
     display: block;
     font-family: "rimas", sans-serif;
     text-align: left;
-    font-size: 1.5rem;
-    margin-top: 7rem;
-    margin-left: 1rem;
-    width: 15rem;
+    font-size: 2rem;
+    margin-top: -3rem;
     color: white;
   }
   .action {
@@ -193,13 +212,13 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 99rem;
-    left: 13rem;
+    top: 90rem;
+    left: 40rem;
     font-size: 1.6em;
     font-family: "Fog", sans-serif;
     padding: 10px 20px;
     height: 4rem;
-    width: 12rem;
+    width: 20rem;
     background: radial-gradient(circle at center, #fbf9e2, #dad2c6);
     border: none;
     cursor: pointer;
@@ -207,16 +226,25 @@
     border-radius: 5%;
     color: #AA771C;
     transition: transform 0.3s, width 0.2s ease-in;
+    z-index: 2;
   }
   .action:hover {
-    width: 16rem;
+    width: 25rem;
     height: 4rem;
   }
   .plate1 {
-    display: none;
+    display: flex;
+    position: absolute;
+    width: 13rem;
+    left: 40rem;
+    top: 0rem;
   }
   .plate2 {
-    display: none;
+    display: flex;
+    position: absolute;
+    width: 13rem;
+    left: 40rem;
+    top: 20rem;
   }
   .hidden {
     display: none !important;
@@ -225,7 +253,7 @@
     background-color: rgba(0, 0, 0, 0.45);
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 199vh;
     z-index: 4;
   }
@@ -239,16 +267,17 @@
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    left: 1rem;
+    left: 20rem;
     right: 20rem;
     top: 5rem;
     bottom: 5rem;
     border-radius: 15px;
-    width: 20rem;
   }
   .contactForm h1 {
     font-family: "Fog", sans-serif;
     color: #AA771C;
+    display: flex;
+    margin-left: 8rem;
   }
   .contactForm form {
     display: flex;
@@ -259,13 +288,13 @@
     position: relative;
     padding: 15px 0 0;
     margin-top: 10px;
-    width: 28%;
-    left: 1rem;
-    margin-right: 4rem;
+    width: 20%;
+    left: 5rem;
+    margin-right: 10rem;
   }
   .contactForm form .form__group .form__field {
     font-family: inherit;
-    width: 100%;
+    width: 150%;
     border: 0;
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
@@ -345,30 +374,21 @@
     display: flex;
     position: absolute;
     top: 3rem;
-    left: 20rem;
+    left: 35rem;
     width: 2rem;
     height: 2rem;
     border-radius: 0;
   }
-  #readMoreButton {
-    display: flex;
-    top: 16rem;
-    left: 8rem;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-  }
 }
 @font-face {
   font-family: Giza;
-  src: url(./fonts/Giza.otf);
+  src: url(../fonts/Giza.otf);
 }
 @font-face {
   font-family: Fog;
-  src: url(./fonts/foglihtenno07/FoglihtenNo07.otf);
+  src: url(../fonts/foglihtenno07/FoglihtenNo07.otf);
 }
 @font-face {
   font-family: rimas;
-  src: url(./fonts/LDBumbon-Regular.ttf);
-}/*# sourceMappingURL=mobile.css.map */
+  src: url(../fonts/LDBumbon-Regular.ttf);
+}/*# sourceMappingURL=laptopsmall.css.map */
