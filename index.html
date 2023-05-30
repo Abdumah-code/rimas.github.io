@@ -77,28 +77,31 @@
   <button  id="close" class="close">X</button>
   
   <form action="submit.php" method="POST">
-    <label for="name">Namn:</label>
-    <input type="text" id="name" name="name" required><br><br>
+    <div class="form__group">
+      <label for="name">Namn:</label>
+      <input type="text" id="name" name="name" class="form__field" required><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="form__field" required><br><br>
 
-    <label for="phone">Mobil Number:</label>
-    <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="phone">Mobil Number:</label>
+      <input type="tel" id="phone" name="phone" class="form__field" required><br><br>
+    </div>
+    <div class="form__group">
+      <label for="people">Antal Gäster:</label>
+      <input type="number" id="people" name="people" class="form__field" required><br><br>
+      
+      <label for="event">Event:</label>
+      <input type="text" id="event" name="event" class="form__field" required><br><br>
 
-    <label for="people">Antal Gäster:</label>
-    <input type="number" id="people" name="people" required><br><br>
+      <label for="diet">Preferenser:</label>
+      <select id="diet" name="diet" class="form__field" required>
+        <option value="vegetarian">Vegetariskt</option>
+        <option value="meat">Kött</option>
+      </select><br><br>
 
-    <label for="event">Event:</label>
-    <input type="text" id="event" name="event"><br><br>
-
-    <label for="diet">Preferenser:</label>
-    <select id="diet" name="diet" required>
-      <option value="vegetarian">Vegetariskt</option>
-      <option value="meat">Kött</option>
-    </select><br><br>
-
-    <button class="subButton" type="submit" value="Submit">SKICKA</button>
+      <input type="submit" value="Skicka">
+    </div>
   </form>
 </div>
 

@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #242424;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -13,42 +13,6 @@
     display: flex;
     overflow-x: hidden;
     justify-content: center;
-  }
-  header {
-    background-color: rgba(12, 1, 1, 0.457);
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-  }
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  header nav ul li {
-    display: inline;
-    margin-left: 1rem;
-  }
-  header nav ul li a {
-    text-decoration: none;
-  }
-  header nav ul li a i {
-    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  header nav ul li a i:hover {
-    text-decoration: underline;
   }
   .first {
     position: absolute;
@@ -288,19 +252,20 @@
   .vail {
     background-color: rgba(0, 0, 0, 0.45);
     display: flex;
-    width: 100%;
+    position: absolute;
+    width: 100vw;
     height: 199vh;
     z-index: 4;
   }
   .contactForm {
     display: flex;
+    flex-wrap: wrap;
     position: fixed;
     z-index: 5;
-    font-size: 2rem;
-    flex-direction: column;
+    font-size: 1.5rem;
     background-color: #b3b3b3;
     padding: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     left: 20rem;
     right: 20rem;
@@ -308,30 +273,100 @@
     bottom: 5rem;
     border-radius: 15px;
   }
-  .contactForm input {
-    border: none;
-    width: 15rem;
-    height: 1.5rem;
-  }
   .contactForm h1 {
     font-family: "Fog", sans-serif;
     color: #AA771C;
   }
-  .subButton {
-    background-color: #AA771C;
+  .contactForm form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contactForm form .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 28%;
+    left: 5rem;
+    margin-right: 10rem;
+  }
+  .contactForm form .form__group .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .contactForm form .form__group .form__field::-moz-placeholder {
+    color: transparent;
+  }
+  .contactForm form .form__group .form__field::placeholder {
+    color: transparent;
+  }
+  .contactForm form .form__group .form__field:-moz-placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  .contactForm form .form__group .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  .contactForm form .form__group .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    -o-border-image: linear-gradient(to right, #BF953F, #FCF6BA);
+       border-image: linear-gradient(to right, #BF953F, #FCF6BA);
+    border-image-slice: 1;
+  }
+  .contactForm form .form__group .form__field:focus ~ .form__label {
     position: absolute;
-    font-size: 2.5rem;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 0;
-    left: 39rem;
-    top: 36rem;
-    font-family: "Fog", sans-serif;
-    color: #AA771C;
-    justify-content: center;
-    align-content: center;
-    margin: 0%;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #BF953F;
+    font-weight: 700;
+  }
+  .contactForm form .form__group .form__field:required, .contactForm form .form__group .form__field:invalid {
+    box-shadow: none;
+  }
+  .contactForm form .form__group .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  .contactForm form .form__group #diet option[value=meat] {
+    color: #000;
+  }
+  .contactForm form .form__group #diet option[value=vegetarian] {
+    color: #000;
+  }
+  .contactForm form .form__group input[type=submit] {
+    background-color: #AA771C;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  .contactForm form .form__group input[type=submit]:hover {
+    background-color: #865c15;
   }
   .close {
     display: flex;
