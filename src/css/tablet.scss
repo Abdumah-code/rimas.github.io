@@ -1,3 +1,8 @@
+$primary: #BF953F;
+$secondary: #FCF6BA;
+$white: #fff;
+$gray: #9b9b9b;
+
 @media (min-width: 769px) and (max-width: 1024px){  
     body {
         font-family: Arial, sans-serif;
@@ -27,7 +32,7 @@
         display: flex;
         width: 0.1rem;
         height: 107rem;
-        left: 21rem;
+        left: 47rem;
         z-index: 3;
     }
     
@@ -73,18 +78,18 @@
     
     .title {
         font-family: 'rimas', sans-serif;
-        font-size: 2.1em;
+        font-size: 4em;
         color: #AA771C;
         display: flex;
         position: absolute;
         left: 6rem;
-        top: -1.5rem;
+        top: -4.5rem;
     }
     
     .back {
         position: absolute;
-        height: 25rem;
-        top: 10rem;
+        height: 45rem;
+        top: 5rem;
         right: 0rem;
         display: flex;
         z-index: 2;
@@ -100,8 +105,8 @@
     
     .back2{
         position: absolute;
-        height: 30rem;
-        top: 55rem;
+        height: 45rem;
+        top: 51rem;
         left: -3rem;
         display: flex;
         z-index: 0;
@@ -109,12 +114,12 @@
     
     .kvalite {
         font-family: 'rimas', sans-serif;
-        font-size: 2em;
+        font-size: 4em;
         display: flex;
         margin: 0%;
         left: 6rem;
-        top: 7rem;
-        width: 15rem;
+        top: 10rem;
+        width: 35rem;
         position: absolute;
         z-index: 3;
         color: #AA771C;
@@ -124,10 +129,10 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 15rem;
-        top: 27rem;
+        width: 35rem;
+        top: 25rem;
         left: 6rem;
-        font-size: 1.3em;
+        font-size: 2em;
         z-index: 3;
         color: #AA771C;
     }
@@ -138,7 +143,7 @@
         align-items: center;
         position: absolute;
         top: 46rem;
-        left: 13rem;
+        left: 25rem;
         transform: translate(-50%, -50%);
         font-size: 1.2em;
         padding: 10px 20px;
@@ -162,17 +167,17 @@
     }
     
     .section {
-        width: 16rem;
+        width: 25rem;
         height: 45rem;
         position: absolute; 
         margin-top: 50rem;
         display: flex;
         flex-direction: column;
-        left: 5rem;
+        left: 10rem;
     
         span {
         background-color: #fbf6c200;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         display: flex;
         width: 100%;
         height: 3rem;
@@ -192,9 +197,9 @@
     .over {
         display: flex;
         margin-top: 1rem;
-        font-size: 1.3em;
+        font-size: 2em;
         line-height: 1.7rem;
-        width: 16rem;
+        width:30rem;
         font-family: 'rimas', sans-serif;
         text-align: center;
         color: #AA771C;
@@ -204,10 +209,10 @@
         display: block;
         font-family: 'rimas', sans-serif;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 7rem;
         margin-left: 1rem;
-        width: 15rem;
+        width: 35rem;
         color: white;
     }
     
@@ -217,12 +222,12 @@
         align-items: center;
         position: absolute;
         top: 99rem;
-        left: 13rem;
+        left: 25rem;
         font-size: 1.6em;
         font-family: 'Fog', sans-serif;
         padding: 10px 20px;
         height: 4rem;
-        width: 12rem;
+        width: 15rem;
         background: radial-gradient(circle at center, #fbf9e2, #dad2c6);  
         border: none;
         cursor: pointer;
@@ -261,77 +266,139 @@
         background-color: rgba(0, 0, 0, 0.45);
         display: flex;
         width: 100%;
-        height: 199vh;
+        height: 154vh;
         z-index: 4;
     }
     
-    .contactForm {
-        display: flex;
-        position: fixed;
-        z-index: 5;
-        font-size: 2rem;
-        flex-direction: column;
-        background-color: #b3b3b3;
-        padding: 1rem;
-        justify-content: center;
-        align-items: center;
-        width: 21rem;
-        height: 48rem;
-        left: 1.5rem;
-        right: 2rem;
-        top: 3rem;
-        bottom: 3rem;
-        border-radius: 15px;
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 5;
+    font-size: 1.5rem;
+    background-color: #b3b3b3;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    left: 8rem;
+    right: 20rem;
+    top: 5rem;
+    bottom: 5rem;
+    border-radius: 15px;
+    width: 35rem;
     
-        input {
-        border: none;
-        width: 15rem;
-        height: 1.5rem;
-        }
-    
-        h1 {
+    h1 {
         font-family: 'Fog', sans-serif;
         color: #AA771C;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .form__group {
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 28%;
+        left: 1rem;
+        margin-right: 4rem;
+        margin-bottom: 10rem;
+    
+        .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid $gray;
+            outline: 0;
+            font-size: 1.3rem;
+            color: $white;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+    
+            &::placeholder {
+            color: transparent;
+            }
+    
+            &:placeholder-shown ~ .form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+            }
+    
+            &:focus {
+            padding-bottom: 6px;  
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, $primary,$secondary);
+            border-image-slice: 1;
+            
+            ~ .form__label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 1rem;
+                color: $primary;
+                font-weight:700;
+            }
+            }
+    
+            &:required, &:invalid {
+            box-shadow: none;
+            }
+        }
+    
+        .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: $gray;
+        }
+    
+            #diet option[value="meat"] {
+            color: #000;
+        }
+        
+        #diet option[value="vegetarian"] {
+            color: #000;
+        }
+    
+        input[type="submit"] {
+            background-color: #AA771C;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #865c15;
+        }
         }
     }
-    
-    .subButton {
-        background-color: #AA771C;
-        display: flex;
-        position: absolute;
-        font-size: 2.5rem;
-        width: 10rem;
-        height: 3rem;
-        border-radius: 0;
-        left: 11rem;
-        top: 48rem;
-        font-family: 'Fog', sans-serif;
-        color: #AA771C;
-        justify-content: center;
-        align-content: center;
-        margin: 0%;
     }
-    
+        
     .close {
         display: flex;
         position: absolute;
         top: 3rem;
-        left: 21rem;
+        left: 35rem;
         width: 2rem;
         height: 2rem;
         border-radius: 0;
     }
-    
-    #readMoreButton {
-        display: flex;
-        top: 16rem;
-        left: 8rem;
-        width: 2rem;
-        height: 2rem;
-        font-size: 1rem;
-        border-radius: 5px;
-    }
-    }
+}
     
     
     @font-face {

@@ -273,36 +273,6 @@ button i {
     z-index: 4;
 }
 
-// .contactForm {
-//     display: flex;
-//     position: fixed;
-//     z-index: 5;
-//     font-size: 2rem;
-//     flex-direction: column;
-//     background-color: #b3b3b3;
-//     padding: 1rem;
-//     justify-content: center;
-//     align-items: center;
-//     width: 21rem;
-//     height: 48rem;
-//     left: 1.5rem;
-//     right: 2rem;
-//     top: 3rem;
-//     bottom: 3rem;
-//     border-radius: 15px;
-
-//     input {
-//     border: none;
-//     width: 15rem;
-//     height: 1.5rem;
-//     }
-
-//     h1 {
-//     font-family: 'Fog', sans-serif;
-//     color: #AA771C;
-//     }
-// }
-
 .contactForm {
     display: flex;
     flex-wrap: wrap;
@@ -429,16 +399,6 @@ button i {
     width: 2rem;
     height: 2rem;
     border-radius: 0;
-}
-
-#readMoreButton {
-    display: flex;
-    top: 16rem;
-    left: 8rem;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
 }
 }
 
