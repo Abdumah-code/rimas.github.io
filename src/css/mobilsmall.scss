@@ -1,0 +1,419 @@
+$primary: #BF953F;
+$secondary: #FCF6BA;
+$white: #fff;
+$gray: #9b9b9b;
+
+@media (max-width: 320px){  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 125%;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.first {
+    position: absolute;
+    display: flex;
+    width: 0.1rem;
+    height: 74rem;
+    left: 4rem;
+    z-index: 3;
+}
+
+.second {
+    position: absolute;
+    display: flex;
+    width: 0.1rem;
+    height: 74rem;
+    left: 15rem;
+    z-index: 3;
+}
+
+.third {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 0.1rem;
+    top: 4rem;
+    left: 0;
+    z-index: 3;
+}
+
+.forth {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 0.1rem;
+    top: 32rem;
+    left: 0;
+    z-index: 3;
+}
+
+.fifth {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 0.1rem;
+    top: 70rem;
+    left: 0;
+    z-index: 3;
+}
+
+.complogo {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  height: auto;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 2;
+  max-width: 3rem;
+  min-width: 3rem;
+}
+
+.title {
+    font-family: 'rimas', sans-serif;
+    font-size: 1.4em;
+    color: #AA771C;
+    display: flex;
+    position: absolute;
+    left: 5rem;
+    top: -0.7rem;
+}
+
+.back {
+    position: absolute;
+    height: 20rem;
+    top: 4rem;
+    right: 0rem;
+    display: flex;
+    z-index: 2;
+}
+
+.woman {
+    display: none;
+    // position: absolute;
+    // width: 25rem;
+    // left: 10rem;
+    // top: 6.5rem;
+}
+
+.back2{
+    position: absolute;
+    height: 25rem;
+    top: 32rem;
+    left: -3rem;
+    display: flex;
+    z-index: 0;
+}
+
+.kvalite {
+    font-family: 'rimas', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    margin: 0%;
+    left: 5rem;
+    top: 7rem;
+    width: 10rem;
+    position: absolute;
+    z-index: 3;
+    color: #AA771C;
+}
+
+.undertext {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 10rem;
+    top: 16rem;
+    left: 5rem;
+    font-size: 1em;
+    z-index: 3;
+    color: #AA771C;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 29rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    height: 4rem;
+    width: 4rem;
+    background: radial-gradient(circle at center, #fbf9e2, #dad2c6);  
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+button:hover {
+    background: radial-gradient(circle at center, #dad2c6, #fbf9e2 );
+}
+
+button i {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.section {
+    width: 16rem;
+    height: 35rem;
+    position: absolute; 
+    margin-top: 31rem;
+    display: flex;
+    flex-direction: column;
+    left: 4.5rem;
+
+    span {
+    background-color: #fbf6c200;
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    font-family: 'Fog', sans-serif;
+    letter-spacing: 0.1rem;
+    transition: transform 0.3s ease-in;
+    color: #AA771C;
+    }
+
+    span:hover {
+    transform: scale(1.2);
+    }
+}
+
+.over {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1em;
+    line-height: 1.7rem;
+    width: 10rem;
+    font-family: 'rimas', sans-serif;
+    text-align: center;
+    color: #AA771C;
+}
+
+.under {
+    display: block;
+    font-family: 'rimas', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    color: white;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65rem;
+    left: 9.5rem;
+    font-size: 1em;
+    font-family: 'Fog', sans-serif;
+    padding: 10px 20px;
+    height: 3rem;
+    width: 9rem;
+    background: radial-gradient(circle at center, #fbf9e2, #dad2c6);  
+    border: none;
+    cursor: pointer;
+    color: bla;
+    border-radius: 5%;
+    color: #AA771C;
+    transition: transform 0.3s, width 0.2s ease-in;
+}
+
+.action:hover {
+    width: 11rem;
+    height: 3rem;
+}
+
+.plate1 {
+    display: none;
+    // position: absolute;
+    // width: 13rem;
+    // left: 40rem;
+    // top: 0rem;
+}
+
+.plate2 {
+    display: none;
+    // position: absolute;
+    // width: 13rem;
+    // left: 40rem;
+    // top: 20rem;
+}
+
+.hidden {
+    display: none !important; 
+}
+
+.vail {
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 199vh;
+    z-index: 4;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 5;
+    font-size: 1.5rem;
+    background-color: #b3b3b3;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    left: 1rem;
+    right: 20rem;
+    top: 5rem;
+    bottom: 5rem;
+    border-radius: 15px;
+    width: 20rem;
+  
+    h1 {
+      font-family: 'Fog', sans-serif;
+      color: #AA771C;
+    }
+    
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      .form__group {
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 28%;
+        left: 1rem;
+        margin-right: 4rem;
+  
+        .form__field {
+          font-family: inherit;
+          width: 100%;
+          border: 0;
+          border-bottom: 2px solid $gray;
+          outline: 0;
+          font-size: 1.3rem;
+          color: $white;
+          padding: 7px 0;
+          background: transparent;
+          transition: border-color 0.2s;
+  
+          &::placeholder {
+            color: transparent;
+          }
+  
+          &:placeholder-shown ~ .form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+          }
+  
+          &:focus {
+            padding-bottom: 6px;  
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, $primary,$secondary);
+            border-image-slice: 1;
+            
+            ~ .form__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 1rem;
+              color: $primary;
+              font-weight:700;
+            }
+          }
+  
+          &:required, &:invalid {
+            box-shadow: none;
+          }
+        }
+  
+        .form__label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1rem;
+          color: $gray;
+        }
+  
+          #diet option[value="meat"] {
+            color: #000;
+        }
+        
+        #diet option[value="vegetarian"] {
+            color: #000;
+        }
+  
+        input[type="submit"] {
+          background-color: #AA771C;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border: none;
+          border-radius: 4px;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #865c15;
+        }
+      }
+    }
+  }
+
+.close {
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    left: 20rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0;
+}
+}
+
+
+@font-face {
+    font-family: Giza;
+    src: url(./fonts/Giza.otf);
+  }
+  
+  @font-face {
+    font-family: Fog;
+    src: url(./fonts/foglihtenno07/FoglihtenNo07.otf);
+  }
+  
+  @font-face {
+    font-family: rimas;
+    src: url(./fonts/LDBumbon-Regular.ttf);
+  }
