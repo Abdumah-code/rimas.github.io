@@ -23,8 +23,8 @@ document.querySelector('form').addEventListener('submit', function (e) {
     Email.send({
       SecureToken : "f5040cc6-b5f0-41ae-9f7e-8c272cb338b6",
       To: 'info@rimascatering.com',
-      From: "abdumah2021fr@gmail.com",
-      Subject: "Form Submission",
+      From: "info@rimascatering.com",
+      Subject: "NY BESTÄLLNING",
       Body: body
     }).then(function (message) {
       alert(message);
